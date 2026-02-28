@@ -3,35 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The $0 Down Dynasty | Wei Jin</title>
+    <title>The 0 Down Dynasty | Real Estate Secrets</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
-        :root { 
-            --navy: #0a192f; 
-            --gold: #c5a059; 
-            --urgent-red: #dc2626;
+        :root {
+            --navy: #0a192f;
+            --gold: #c5a059;
+            --crimson: #8b0000;
+            --urgent-red: #dc2626; /* Thêm màu đỏ cảnh báo */
         }
-        body { font-family: 'Inter', sans-serif; background-color: #f8f9fa; color: var(--navy); }
-        h1, h2, h3, .font-serif { font-family: 'Cinzel', serif; }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f9fa;
+            color: var(--navy);
+        }
+        h1, h2, h3, .font-serif {
+            font-family: 'Cinzel', serif;
+        }
         .bg-navy { background-color: var(--navy); }
         .text-gold { color: var(--gold); }
-        .btn-gold { background-color: var(--gold); color: white; transition: 0.3s; }
-        .btn-gold:hover { transform: scale(1.05); background-color: #b38f4d; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2); }
-        
-        /* Hiệu ứng Zoom mượt cho bìa sách */
-        .book-container { perspective: 1000px; }
-        .book-cover {
-            transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
-            transform: rotateY(-10deg);
-            box-shadow: 20px 20px 50px rgba(0,0,0,0.3);
+        .border-gold { border-color: var(--gold); }
+        .btn-primary {
+            background-color: var(--gold);
+            transition: all 0.3s ease;
         }
-        .book-container:hover .book-cover {
-            transform: rotateY(0deg) scale(1.05);
+        .btn-primary:hover {
+            background-color: #b38f4d;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+        .card-shadow {
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
         }
         
-        .faq-item { border-bottom: 1px solid #e5e7eb; padding: 1.5rem 0; }
-
         /* SCARCITY PROGRESS BAR ANIMATION */
         @keyframes progress-move {
             0% { background-position: 0 0; }
@@ -54,27 +59,39 @@
 </head>
 <body class="antialiased">
 
-    <!-- Hero Section -->
+    <!-- Section 1: Hook & CTA -->
     <header class="bg-navy text-white pt-16 pb-16 px-4 text-center relative overflow-hidden">
-        <div class="max-w-4xl mx-auto z-10 relative">
-            <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">THEY'VE BEEN HIDING THIS FROM YOU.</h1>
-            <p class="text-xl md:text-2xl font-light mb-10 text-gray-300">How Chinese Merchant Dynasties Control Millions in Real Estate with <span class="text-gold font-bold">$0 of Their Own Money.</span></p>
+        <div class="max-w-4xl mx-auto relative z-10">
+            <p class="text-gold font-semibold tracking-widest uppercase mb-4 text-sm animate-pulse">
+                [ 90% OFF - TODAY ONLY ]
+            </p>
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+                THEY'VE BEEN HIDING THIS FROM YOU.
+            </h1>
+            <p class="text-xl md:text-2xl font-light mb-10 text-gray-300">
+                How Chinese Merchant Dynasties Control Millions in Real Estate with <span class="text-gold font-bold">$0 of Their Own Money.</span>
+            </p>
             
-            <div class="book-container inline-block mb-10">
-                <!-- PLACEHOLDER: ẢNH BÌA SÁCH CỦA BẠN -->
-                <img src="https://placehold.co/400x600/0a192f/c5a059?text=THE+0+DOWN+DYNASTY\n\nUpload+Cover+Here" 
-                     alt="The 0 Down Dynasty Book Cover" 
-                     class="book-cover w-64 md:w-72 h-auto border-2 border-gold rounded-sm object-cover shadow-2xl">
-            </div>
+            <div class="flex flex-col items-center">
+                <div class="relative mb-8 transform hover:scale-105 transition-transform duration-500 card-shadow">
+                    
+                    <!-- PLACEHOLDER: ẢNH BÌA SÁCH CỦA BẠN -->
+                    <img src="https://placehold.co/400x600/0a192f/c5a059?text=THE+0+DOWN+DYNASTY\n\nUpload+Cover+Here" 
+                         alt="The 0 Down Dynasty Book Cover" 
+                         class="w-64 md:w-72 h-auto border-2 border-gold rounded-sm object-cover shadow-2xl">
 
-            <div class="max-w-xs mx-auto">
-                <div class="flex flex-col justify-center items-center mb-4 bg-white/5 p-4 rounded-lg border border-gold/30">
-                    <span class="text-sm text-gray-400 uppercase tracking-widest mb-1">Lifetime Access</span>
-                    <span class="text-4xl font-bold text-gold">$15.00</span>
                 </div>
-                <!-- LINK THANH TOÁN (GUMROAD) -->
-                <a href="#" class="btn-gold block py-5 rounded-md font-bold text-2xl text-center shadow-lg">GET THE PLAYBOOK</a>
-                <p class="text-[10px] text-gray-400 mt-2 uppercase tracking-wide">Instant Digital Access • Secure Checkout</p>
+
+                <div class="bg-white text-navy p-6 rounded-lg max-w-sm w-full card-shadow mb-8">
+                    <div class="flex justify-between items-center mb-4">
+                        <span class="text-gray-400 line-through text-lg">$197.00</span>
+                        <span class="text-3xl font-bold text-red-700">$17.00</span>
+                    </div>
+                    <a href="#" class="btn-primary block w-full py-4 rounded-md text-white font-bold text-xl text-center mb-2">
+                        GET THE PLAYBOOK NOW
+                    </a>
+                    <p class="text-[10px] text-gray-400">Instant Digital Access • Secure Checkout</p>
+                </div>
             </div>
         </div>
         <!-- Decorative subtle pattern -->
@@ -102,36 +119,44 @@
                 WHAT'S INSIDE THE PLAYBOOK?
             </h2>
             
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Value Item -->
-                <div class="bg-gray-50 p-6 rounded-sm border-t-4 border-gold shadow-sm">
-                    <h3 class="text-lg font-bold mb-3 text-navy">The Family Trust Loophole</h3>
-                    <p class="text-gray-600 text-sm leading-relaxed">Control multi-million dollar buildings with $0 of your own capital. Learn how we structure family trusts to legally skip probate and protect assets.</p>
+            <div class="grid md:grid-cols-3 gap-12">
+                <!-- Value 1 -->
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-navy text-gold rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">The Family Trust Loophole</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Control multi-million dollar buildings with $0 of your own capital. Learn how we structure family trusts to legally skip probate and protect assets from lawsuits.
+                    </p>
                 </div>
-                <!-- Value Item -->
-                <div class="bg-gray-50 p-6 rounded-sm border-t-4 border-gold shadow-sm">
-                    <h3 class="text-lg font-bold mb-3 text-navy">The DSCR Secret</h3>
-                    <p class="text-gray-600 text-sm leading-relaxed">Borrow based on the property's income, not your tax return. The banks don't tell you this exists because they want your personal liability.</p>
+
+                <!-- Value 2 -->
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-navy text-gold rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 005.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">The Guanxi Edge</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Why the best deals never hit Zillow. Master the art of the 10 PM phone call and get access to off-market inventory at 70% of market value.
+                    </p>
                 </div>
-                <!-- Value Item -->
-                <div class="bg-gray-50 p-6 rounded-sm border-t-4 border-gold shadow-sm">
-                    <h3 class="text-lg font-bold mb-3 text-navy">The Subject-To Strategy</h3>
-                    <p class="text-gray-600 text-sm leading-relaxed">Inherit the seller's 2.8% mortgage rate completely legally, while everyone else on the market is suffering at 7%.</p>
-                </div>
-                <!-- Value Item -->
-                <div class="bg-gray-50 p-6 rounded-sm border-t-4 border-gold shadow-sm">
-                    <h3 class="text-lg font-bold mb-3 text-navy">The 70% Ancestor Rule</h3>
-                    <p class="text-gray-600 text-sm leading-relaxed">Never overpay again. This brutal, emotionless math rule saves my family $50K+ on every single deal we touch.</p>
-                </div>
-                <!-- Value Item -->
-                <div class="bg-gray-50 p-6 rounded-sm border-t-4 border-gold shadow-sm">
-                    <h3 class="text-lg font-bold mb-3 text-navy">The Bamboo BRRRR</h3>
-                    <p class="text-gray-600 text-sm leading-relaxed">Buy, Rehab, Rent, Refinance, Repeat. Pull your capital back out tax-free. Deploy it again. Build an infinite portfolio.</p>
-                </div>
-                <!-- Value Item -->
-                <div class="bg-gray-50 p-6 rounded-sm border-t-4 border-gold shadow-sm">
-                    <h3 class="text-lg font-bold mb-3 text-navy">The 1031 Dynasty Loop</h3>
-                    <p class="text-gray-600 text-sm leading-relaxed">Swap properties for life. Defer taxes indefinitely. Die holding everything. Your heirs get a step-up in basis and thank you forever.</p>
+
+                <!-- Value 3 -->
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-navy text-gold rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">The Bamboo BRRRR</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Pull your capital back out tax-free. Deploy it again. Forever. Use the bank's money to pay for the property, the rehab, and the next empire.
+                    </p>
                 </div>
             </div>
 
@@ -149,49 +174,134 @@
 
     <!-- Section 3: Proof (Reviews) -->
     <section class="py-20 px-4 bg-gray-50 border-y border-gray-100">
-        <div class="max-w-6xl mx-auto text-center">
-            <h2 class="text-3xl font-bold mb-12 uppercase tracking-widest">Real People. Real Empires.</h2>
-            <div class="grid md:grid-cols-2 gap-8 text-left">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12">REAL PEOPLE. REAL EMPIRES.</h2>
+            
+            <div class="grid md:grid-cols-2 gap-8">
                 <!-- Review 1 -->
-                <div class="p-8 border-l-4 border-gold shadow-sm bg-white rounded-sm flex flex-col justify-between">
-                    <p class="italic mb-6 text-sm text-gray-700">"I've spent $15,000 on real estate courses. This $15 book taught me more about leverage than all of them combined. The Guanxi chapter alone changed how I talk to sellers."</p>
+                <div class="bg-white p-8 rounded-sm card-shadow border-l-4 border-gold flex flex-col justify-between">
+                    <p class="italic text-gray-700 mb-6 text-sm">
+                        "I used the <strong>Subject-To</strong> strategy to take over a 4-unit building in Texas. I inherited a 2.9% rate and walked away with <strong>$2,400 monthly cash flow</strong> without a credit check."
+                    </p>
                     <div class="flex items-center">
-                        <img src="https://i.pravatar.cc/150?u=david" class="w-12 h-12 rounded-full mr-4 border border-gray-200 object-cover">
-                        <div><p class="font-bold text-navy text-sm">Michael T.</p><p class="text-xs text-gold font-semibold">California</p></div>
+                        <img src="https://i.pravatar.cc/150?u=david" alt="David K." class="w-12 h-12 rounded-full mr-4 border border-gray-200 object-cover">
+                        <div>
+                            <p class="font-bold text-sm text-navy">David K.</p>
+                            <p class="text-gold text-xs">Dallas, TX</p>
+                        </div>
                     </div>
                 </div>
+
                 <!-- Review 2 -->
-                <div class="p-8 border-l-4 border-gold shadow-sm bg-white rounded-sm flex flex-col justify-between">
-                    <p class="italic mb-6 text-sm text-gray-700">"The Subject-To strategy is worth 100x the price. I just took over a property with a 2.9% rate. My banker still doesn't know how I pulled it off. Wei's logic is brutal but it works."</p>
+                <div class="bg-white p-8 rounded-sm card-shadow border-l-4 border-gold flex flex-col justify-between">
+                    <p class="italic text-gray-700 mb-6 text-sm">
+                        "The <strong>DSCR secrets</strong> allowed me to close on my third property while my salary was only $60k. I borrowed based on the house's income. My net worth increased by <strong>$145,000 in 6 months.</strong>"
+                    </p>
                     <div class="flex items-center">
-                        <img src="https://i.pravatar.cc/150?u=michelle" class="w-12 h-12 rounded-full mr-4 border border-gray-200 object-cover">
-                        <div><p class="font-bold text-navy text-sm">Sarah L.</p><p class="text-xs text-gold font-semibold">Texas</p></div>
+                        <img src="https://i.pravatar.cc/150?u=michelle" alt="Michelle L." class="w-12 h-12 rounded-full mr-4 border border-gray-200 object-cover">
+                        <div>
+                            <p class="font-bold text-sm text-navy">Michelle L.</p>
+                            <p class="text-gold text-xs">Queens, NY</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="bg-white p-8 rounded-sm card-shadow border-l-4 border-gold flex flex-col justify-between">
+                    <p class="italic text-gray-700 mb-6 text-sm">
+                        "Implemented the <strong>1031 Dynasty Loop</strong>. Sold my small duplex and swapped into a 12-unit complex <strong>tax-free</strong>. My grandchildren's education is now fully funded by the tenants."
+                    </p>
+                    <div class="flex items-center">
+                        <img src="https://i.pravatar.cc/150?u=robert" alt="Robert C." class="w-12 h-12 rounded-full mr-4 border border-gray-200 object-cover">
+                        <div>
+                            <p class="font-bold text-sm text-navy">Robert C.</p>
+                            <p class="text-gold text-xs">San Francisco, CA</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 4 -->
+                <div class="bg-white p-8 rounded-sm card-shadow border-l-4 border-gold flex flex-col justify-between">
+                    <p class="italic text-gray-700 mb-6 text-sm">
+                        "Saved over <strong>$55,000 in closing costs</strong> and overpayments on my first deal using the 70% Ancestor Rule. Uncle Wei's logic is brutal but it works 100% of the time."
+                    </p>
+                    <div class="flex items-center">
+                        <img src="https://i.pravatar.cc/150?u=jason" alt="Jason M." class="w-12 h-12 rounded-full mr-4 border border-gray-200 object-cover">
+                        <div>
+                            <p class="font-bold text-sm text-navy">Jason M.</p>
+                            <p class="text-gold text-xs">Irvine, CA</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Section 4: The Choices -->
-    <section class="py-20 px-4 bg-white text-center">
+    <!-- PLACEHOLDER: HÌNH 2 UNC ĐỌC SÁCH + FAQ Section -->
+    <section class="py-20 px-4 bg-white border-b border-gray-100">
         <div class="max-w-4xl mx-auto">
-            <h2 class="text-3xl font-bold mb-12">YOU HAVE TWO CHOICES:</h2>
+            
+            <!-- PLACEHOLDER: HÌNH 2 UNC ĐỌC SÁCH -->
+            <div class="mb-16 w-full h-80 bg-gray-100 border-2 border-dashed border-gold rounded-sm flex flex-col items-center justify-center p-4">
+                 <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-gray-400 mb-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                </svg>
+                <p class="text-navy font-bold text-center">CHỖ NHÉT HÌNH 2</p>
+                <p class="text-gray-500 text-sm text-center">UNC CHĂM CHÚ ĐỌC SẢN PHẨM HOẶC KIỂM TRA THÔNG TIN</p>
+            </div>
+
+            <h2 class="text-3xl font-bold text-center mb-10 tracking-widest uppercase">The Inner Circle Questions</h2>
+            
+            <div class="space-y-6">
+                <!-- FAQ Item 1 -->
+                <div class="bg-gray-50 p-6 rounded-sm border-l-2 border-gold">
+                    <h4 class="font-bold text-navy text-lg mb-2">Is this really $17? If this is so powerful, shouldn't it cost thousands?</h4>
+                    <p class="text-gray-600 text-sm leading-relaxed">Because I don't need your money to build my empire—I've already built it. The $17 is a filter. It keeps out the tourists and attracts the action-takers I want in my inner circle before the banks try to take this down.</p>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="bg-gray-50 p-6 rounded-sm border-l-2 border-gold">
+                    <h4 class="font-bold text-navy text-lg mb-2">Is this even legal? It sounds like a loophole.</h4>
+                    <p class="text-gray-600 text-sm leading-relaxed">It is 100% legal. Every single strategy in this book is within the law. The real question is: Why didn't your banker tell you about this? Because they make money when you stay in debt for 30 years.</p>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="bg-gray-50 p-6 rounded-sm border-l-2 border-gold">
+                    <h4 class="font-bold text-navy text-lg mb-2">I'm new to real estate. Will this work for me?</h4>
+                    <p class="text-gray-600 text-sm leading-relaxed">Yes. These strategies work whether you're buying your first property or your 50th. My grandfather taught them to me when I was 22 with nothing but drive and discipline.</p>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="bg-gray-50 p-6 rounded-sm border-l-2 border-gold">
+                    <h4 class="font-bold text-navy text-lg mb-2">What if I buy it and I'm still broke?</h4>
+                    <p class="text-gray-600 text-sm leading-relaxed">This isn't a magic pill. It's a blueprint. If you read it and do nothing, you stay where you are. But if you execute one single strategy, you'll save more in one month than the cost of a thousand copies of this book.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- THÊM MỚI: Section "You Have Two Choices" -->
+    <section class="py-20 px-4 bg-white text-center border-b border-gray-100">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold mb-12 uppercase tracking-widest text-navy font-serif">YOU HAVE TWO CHOICES:</h2>
             
             <div class="grid md:grid-cols-2 gap-6 text-left">
-                <!-- Choice 1 -->
+                <!-- Choice 1 (The Western Way) -->
                 <div class="bg-red-50 p-8 rounded-lg border border-red-100">
                     <div class="flex items-center mb-4">
-                        <span class="text-2xl mr-3">❌</span>
-                        <h3 class="font-bold text-red-900 text-lg">The Western Way</h3>
+                        <span class="text-2xl mr-3 font-bold text-red-500">❌</span>
+                        <h3 class="font-bold text-red-900 text-lg uppercase tracking-wide">The Western Way</h3>
                     </div>
                     <p class="text-red-800 text-sm leading-relaxed">Keep doing what the banks taught you. Save for 20 years. Buy one single house. Pay it off slowly over 30 years. Stay broke and pass nothing but memories to your kids.</p>
                 </div>
                 
-                <!-- Choice 2 -->
+                <!-- Choice 2 (The Dynasty Way) -->
                 <div class="bg-green-50 p-8 rounded-lg border border-green-200 shadow-md transform md:-translate-y-2">
                     <div class="flex items-center mb-4">
-                        <span class="text-2xl mr-3">✅</span>
-                        <h3 class="font-bold text-green-900 text-lg">The Dynasty Way</h3>
+                        <div class="w-6 h-6 mr-3 bg-green-500 rounded flex items-center justify-center">
+                            <span class="text-white text-sm font-bold">✓</span>
+                        </div>
+                        <h3 class="font-bold text-green-900 text-lg uppercase tracking-wide">The Dynasty Way</h3>
                     </div>
                     <p class="text-green-800 text-sm leading-relaxed font-medium">Learn what Chinese families have done for centuries. Buy with $0 down. Master good debt. Build a portfolio. Set your bloodline free. What happens next is up to you.</p>
                 </div>
@@ -199,75 +309,53 @@
         </div>
     </section>
 
-    <!-- FAQ Section -->
-    <section class="py-20 px-4 bg-navy text-white">
+    <!-- Section 4: CTA & Reminder (ĐÃ ĐƯỢC NÂNG CẤP SCARCITY METER) -->
+    <section class="py-24 px-4 bg-navy text-white text-center">
         <div class="max-w-3xl mx-auto">
-            <h2 class="text-3xl font-bold text-center mb-12 uppercase tracking-widest text-gold">The Inner Circle Questions</h2>
-            
-            <div class="space-y-6">
-                <div class="border-b border-gray-700 pb-4">
-                    <h4 class="font-bold text-lg mb-2">Is this really just $15?</h4>
-                    <p class="text-gray-400 text-sm">Yes. Just $15. One single payment. No monthly fees. No hidden upsells. You get the complete blueprint immediately.</p>
-                </div>
-                <div class="border-b border-gray-700 pb-4">
-                    <h4 class="font-bold text-lg mb-2">Is this legal? It sounds like a loophole.</h4>
-                    <p class="text-gray-400 text-sm">It is 100% legal. Every single strategy is within the US tax and real estate law. The real question is: Why didn't your banker tell you about this? Because they make money when you stay in debt for 30 years.</p>
-                </div>
-                <div class="border-b border-gray-700 pb-4">
-                    <h4 class="font-bold text-lg mb-2">I'm new to real estate. Will this work for me?</h4>
-                    <p class="text-gray-400 text-sm">Yes. These strategies work whether you're buying your first property or your 50th. My grandfather taught them to me when I was 22 with absolutely zero capital.</p>
-                </div>
-                <div class="border-b border-gray-700 pb-4">
-                    <h4 class="font-bold text-lg mb-2">What if I buy it and don't learn anything?</h4>
-                    <p class="text-gray-400 text-sm">100% Money-Back Guarantee. If you read this and don't find at least ONE strategy that will save or make you $10,000 on your next deal, email me. I will refund every penny. No questions asked.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Final CTA & SCARCITY URGENCY -->
-    <section class="py-24 px-4 bg-gray-100 text-center">
-        <div class="max-w-3xl mx-auto">
-            <h2 class="text-3xl md:text-5xl font-bold mb-8 text-navy leading-tight">
-                BUILD FOR THE NEXT CENTURY.
+            <h2 class="text-3xl md:text-5xl font-bold mb-8 leading-tight">
+                DON'T LET ANOTHER GENERATION START FROM ZERO.
             </h2>
+            <p class="text-lg md:text-xl text-gray-400 mb-12">
+                Your bloodline is either a dynasty or a memory. The difference is the knowledge you hold. If you don't break the cycle of "working for a house," your children will inherit your struggle instead of your success.
+            </p>
             
-            <div class="bg-white p-8 md:p-10 rounded-xl max-w-md mx-auto card-shadow border-t-8 border-gold">
+            <div class="bg-white text-navy p-8 rounded-xl max-w-md mx-auto card-shadow">
+                <p class="text-xs uppercase tracking-widest text-gray-500 mb-2 font-bold">Final Offer</p>
+                
+                <!-- GIÁ CHIM MỒI VÀ GIÁ CHÍNH THỨC -->
                 <div class="flex justify-center items-center gap-4 mb-6">
-                    <span class="text-5xl font-black text-navy font-serif">$15</span>
+                    <span class="text-2xl line-through text-gray-300 font-bold">$197</span>
+                    <span class="text-5xl font-black text-gold font-serif">$17</span>
                 </div>
                 
-                <!-- NEW SCARCITY PROGRESS BAR -->
-                <div class="mb-8 text-left">
+                <a href="#" class="btn-primary block w-full py-5 rounded-lg text-white font-bold text-2xl mb-6">
+                    YES, I WANT THE DYNASTY
+                </a>
+                
+                <!-- SCARCITY PROGRESS BAR MỚI -->
+                <div class="mb-4 text-left">
                     <div class="flex justify-between text-sm mb-2">
-                        <span class="text-gray-600 font-bold uppercase tracking-wider text-xs">Copies Claimed</span>
+                        <span class="text-gray-600 font-bold uppercase tracking-wider text-xs">Current Downloads</span>
                         <span class="font-black text-red-600 animate-urgent-text">82% FULL (4,127/5,000)</span>
                     </div>
                     <!-- Thanh phần trăm chuyển động -->
-                    <div class="w-full bg-gray-200 h-4 rounded-full overflow-hidden border border-gray-300 shadow-inner relative">
+                    <div class="w-full bg-gray-200 h-3 rounded-full overflow-hidden border border-gray-300 shadow-inner relative">
                         <div class="h-full animate-progress transition-all duration-1000 ease-out" style="width: 82%"></div>
                     </div>
-                    <p class="mt-3 text-[11px] text-red-600 uppercase font-black italic text-center animate-pulse">🔥 High Demand: Book will be taken down after 5,000 copies.</p>
+                    <p class="mt-3 text-[10px] text-gray-400 uppercase font-bold italic text-center animate-pulse">This playbook will be taken down once 5,000 copies are sold.</p>
                 </div>
+                <!-- KẾT THÚC SCARCITY PROGRESS BAR MỚI -->
 
-                <!-- LINK THANH TOÁN (GUMROAD) -->
-                <a href="#" class="btn-gold block w-full py-5 rounded-lg text-white font-bold text-2xl mb-4">
-                    SECURE THE DYNASTY
-                </a>
-                
-                <div class="flex justify-center space-x-4 mt-4 text-xs text-gray-500 font-semibold uppercase">
-                    <span>🔒 Secure Checkout</span>
-                    <span>⭐ Lifetime Access</span>
-                </div>
             </div>
             
-            <p class="mt-16 text-gray-400 text-xs">
+            <p class="mt-16 text-gray-500 text-xs">
                 © 2026 THE 0 DOWN DYNASTY. ALL RIGHTS RESERVED.
             </p>
         </div>
     </section>
 
     <script>
+        // Simple scroll reveal or interaction logic can go here
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
@@ -279,5 +367,3 @@
     </script>
 </body>
 </html>
-
-
